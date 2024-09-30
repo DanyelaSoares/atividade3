@@ -1,0 +1,213 @@
+/* Estilizando o corpo e o fundo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #53a49f;
+    /* Verde-água suave */
+    color: #333;
+    /* Texto em cinza escuro */
+}
+
+/* Centralizando o conteúdo da página */
+.container {
+    max-width: 1200px;
+    /* Limita a largura máxima a 1200px */
+    margin: 0 auto;
+    /* Centraliza o container horizontalmente */
+    padding: 0 20px;
+    /* Adiciona algum espaço nas laterais para telas menores */
+}
+
+/* Header */
+header {
+    background-color: #3b7d7a;
+    /* Verde escuro */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    /* Texto branco */
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    /* Texto do menu em branco */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #FF9800;
+    /* Laranja no hover */
+}
+
+/* Section */
+section {
+    background-color: #ffffff;
+    /* Fundo branco para contraste */
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    /* Ativa o flexbox para o container */
+    align-items: center;
+    /* Alinha verticalmente o texto e as imagens */
+}
+
+/* Imagem dentro do section */
+.imagem1 {
+    width: 200px;
+    /* Tamanho da primeira imagem */
+    margin-left: 50px;
+    /* Espaçamento entre o texto e a imagem */
+}
+
+.imagem2 {
+    width: 400px;
+    /* Tamanho da segunda imagem */
+    margin-left: 10px;
+    /* Espaçamento entre o texto e a imagem */
+}
+
+.imagem3 {
+    width: 400px;
+    /* Tamanho da segunda imagem */
+    margin-right: 20px;
+    /* Espaçamento entre o texto e a imagem */
+}
+
+/* Footer */
+footer {
+    background-color: #3b7d7a;
+    /* Verde escuro */
+    padding: 10px;
+    text-align: center;
+    color: white;
+    /* Texto branco */
+    margin-top: 20px;
+}
+
+/* Destaque do texto */
+.destaque {
+    font-weight: bold;
+    /* Texto em negrito */
+    background-color: #e3e0dc;
+    color: black;
+    /* Texto em preto */
+    padding: 3px 2px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Centraliza o texto se aplicável */
+    font-size: 1.0em;
+}
+
+
+/* Estilo adicional para imagens */
+img {
+    height: auto;
+    /* Mantém a proporção da imagem */
+    display: block;
+    /* Para que as imagens fiquem em linha corretamente */
+    margin: 20px 0;
+    border-radius: 8px;
+    /* Bordas arredondadas nas imagens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+}
+
+.texto-maior {
+    font-size: 1.2em;
+    /* Aumenta o tamanho da fonte, corrigido para 'em' */
+    text-align: justify;
+    /* Justifica o texto */
+}
+
+/*****************formulario**************/
+
+.titulo-contato {
+    text-align: center;
+    /* Centraliza o texto */
+    margin-bottom: 20px;
+    /* Espaçamento abaixo do título */
+}
+
+/* Estilos gerais para o formulário */
+form {
+    background-color: #fff;
+    /* Fundo branco */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    padding: 20px;
+    /* Espaçamento interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    max-width: 600px;
+    /* Largura máxima do formulário */
+    margin: 20px auto;
+    /* Centraliza o formulário */
+}
+
+/* Estilo para labels */
+label {
+    font-weight: bold;
+    /* Texto em negrito */
+    margin-bottom: 5px;
+    /* Espaçamento abaixo do label */
+    display: block;
+    /* Faz com que os labels ocupem toda a largura */
+}
+
+/* Estilo para inputs e textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    /* Largura total */
+    padding: 10px;
+    /* Espaçamento interno */
+    margin-bottom: 15px;
+    /* Espaçamento abaixo do campo */
+    border: 1px solid #ccc;
+    /* Borda cinza clara */
+    border-radius: 4px;
+    /* Bordas arredondadas */
+    box-sizing: border-box;
+    /* Inclui padding e bordas no cálculo da largura */
+}
+
+/* Estilo para a mensagem de resposta */
+#response {
+    margin-top: 20px;
+    /* Espaçamento acima da resposta */
+    text-align: center;
+    /* Centraliza o texto */
+    font-weight: bold;
+    /* Texto em negrito */
+}
+
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+    /* Alinha os itens ao topo */
+}
+
+.text-container {
+    margin-left: 20px;
+    /* Espaçamento entre a imagem e o texto */
+    text-align: center;
+    /* Centraliza o texto dentro do contêiner de texto */
+}
+
+.imagem3 {
+    width: 450px;
+    /* Defina o tamanho da imagem conforme necessário */
+}
