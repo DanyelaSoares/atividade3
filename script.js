@@ -1,5 +1,6 @@
 let form = document.getElementById('contactForm');
 let responseDiv = document.getElementById('response');
+let mensagemConfirmacao = document.getElementById("mensagemConfirmacao");
 
 // Adiciona o evento de envio do formulário
 form.addEventListener('submit', function (event) {
@@ -14,6 +15,7 @@ form.addEventListener('submit', function (event) {
     responseDiv.innerHTML = `<p>Obrigado, <strong>${name}</strong>! Sua mensagem foi enviada com sucesso.</p>
                              <p>Email: ${email}</p>
                              <p>Mensagem: ${message}</p>`;
+    responseDiv.style.display = "block"; // Exibe a mensagem de resposta
 
     // Limpa o formulário após o envio
     form.reset();

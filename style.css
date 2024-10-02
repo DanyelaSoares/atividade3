@@ -1,149 +1,201 @@
-/* Estilizando o corpo e o fundo */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #53a49f;
-    /* Verde-água suave */
-    color: #333;
-    /* Texto em cinza escuro */
-}
-
-/* Centralizando o conteúdo da página */
-.container {
-    display: flex;
-    /* Layout flex para dividir em duas colunas */
-    justify-content: space-between;
-    /* Espaçamento entre section e aside */
-    max-width: 1200px;
-    /* Limita a largura máxima a 1200px */
-    margin: 0 auto;
-    /* Centraliza o container horizontalmente */
-    padding: 0 20px;
-    /* Adiciona algum espaço nas laterais para telas menores */
-}
-
-/* Section com 70% da largura */
-section {
-    flex: 7;
-    /* 70% da largura para o section */
-    background-color: #ffffff;
-    /* Fundo branco para contraste */
-    padding: 20px;
-    margin-top: 20px;
-}
-
-/* Aside com 30% da largura */
-aside {
-    flex: 3;
-    /* 30% da largura para o aside */
-    background-color: #e3e0dc;
-    /* Cor de fundo para o aside */
-    padding: 20px;
-    margin-top: 20px;
-    border-left: 2px solid #ccc;
-    /* Adiciona uma borda à esquerda */
-}
-
-/* Menu de navegação */
-nav ul {
-    list-style: none;
-    padding: 0;
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
-    /* Texto do menu em branco */
     text-decoration: none;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
-    color: #FF9800;
-    /* Laranja no hover */
 }
 
-/* Footer */
-footer {
-    background-color: #3b7d7a;
-    /* Verde escuro */
-    padding: 10px;
+.container {
+    display: flex;
+    flex-direction: row;
+    /* Mantém as colunas lado a lado */
+    padding: 20px;
+    max-width: 1200px;
+    /* Define uma largura máxima para o container */
+    margin: 0 auto;
+    /* Centraliza o container na página */
+}
+
+section {
+    flex: 0 0 70%;
+    /* O section ocupa 70% da largura */
+    margin-right: 20px;
+    /* Espaçamento entre as colunas */
     text-align: center;
-    color: white;
-    /* Texto branco */
-    margin-top: 20px;
+    /* Centraliza o texto dentro do section */
+    padding: 20px;
+    /* Adiciona um pouco de preenchimento */
+    background-color: #f9f9f9;
+    /* Fundo leve para destacar a seção */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
 }
 
-/* Destaque do texto */
+aside {
+    flex: 0 0 30%;
+    /* O aside ocupa 30% da largura */
+    text-align: left;
+    /* Alinhamento à esquerda para o aside */
+    padding: 20px;
+    /* Adiciona um pouco de preenchimento */
+    background-color: #f9f9f9;
+    /* Fundo leve para destacar o aside */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+}
+
+h1 {
+    color: #333;
+}
+
 .destaque {
     font-weight: bold;
-    background-color: #e3e0dc;
-    color: black;
-    padding: 3px 2px;
-    text-align: center;
-    font-size: 1.0em;
+    color: #4CAF50;
+    font-size: 20px;
 }
 
-/* Estilo adicional para imagens */
-img {
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.imagem-criar-site {
+    width: 100%;
+    max-width: 300px;
     height: auto;
-    display: block;
-    margin: 20px 0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    /* Centraliza a imagem */
 }
 
-/* Justificar texto do section */
-.texto-maior {
-    font-size: 1.2em;
-    text-align: justify;
-}
-
-/* Estilo do formulário */
-form {
-    background-color: #fff;
+.imagem-daniela {
+    width: 100%;
+    max-width: 200px;
+    height: center;
     border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    /* Centraliza a imagem */
+}
+
+.imagem-site {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    /* Centraliza a imagem */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
     margin: 20px auto;
 }
 
-/* Estilo para inputs e textarea */
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
+form input,
+form textarea {
+    margin-bottom: 10px;
     padding: 10px;
-    margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    border-radius: 5px;
 }
 
-/* Estilo para a mensagem de resposta */
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
 #response {
+    text-align: center;
     margin-top: 20px;
-    text-align: center;
-    font-weight: bold;
 }
 
-/* Estilo do container flex */
-.flex-container {
-    display: flex;
-    align-items: flex-start;
-    /* Alinha os itens ao topo */
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        /* Empilha as colunas em telas menores */
+    }
+
+    section {
+        margin-right: 0;
+        /* Remove o espaço à direita */
+        text-align: center;
+        /* Centraliza o texto */
+    }
+
+    aside {
+        margin-top: 20px;
+        /* Adiciona espaço acima do aside */
+    }
 }
 
-.text-container {
-    margin-left: 20px;
-    text-align: center;
+/*FONTE*/
+
+h1 {
+    font-size: 25px;
 }
 
-.imagem3 {
-    width: 450px;
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 14px;
+}
+
+aside {
+    font-size: 16px;
 }
